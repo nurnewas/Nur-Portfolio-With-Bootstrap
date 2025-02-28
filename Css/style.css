@@ -129,3 +129,44 @@ button {
   outline: none !important;
   box-shadow: none !important;
 }
+
+.header-wrapper .navbar {
+  padding: 15px 0;
+  transition: all 0.2s linear;
+}
+
+.header-wrapper .navbar img {
+  min-width: 120px;
+  height: auto;
+}
+.header-wrapper .navbar-toggler-icon {
+  border: 0px;
+  color: var(--gray-color);
+  line-height: 2;
+}
+.header-wrapper .navbar-toggler-icon {
+  box-shadow: none;
+}
+
+.header-wrapper .nav-item .navbar-link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-color);
+  display: inline-block;
+}
+.header-wrapper .nav-item .navbar-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: 0.3s;
+  bottom: 0;
+}
+
+.header-wrapper .nav-item .navbar-link.active::after,
+.header-wrapper .nav-item .navbar-link:hover::after{
+  
+}
